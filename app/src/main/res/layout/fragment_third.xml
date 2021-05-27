@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+     ~ Created by Siva Raghavendhar.
+     ~ Smirag
+     -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdFragment">
+
+    <!-- ============== -->
+    <!-- GuideLine Start and End -->
+    <!-- ============== -->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuideLineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuideLineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94" />
+    <!-- ============== -->
+    <!-- Business Field -->
+    <!-- ============== -->
+
+    <!-- ============== -->
+    <!-- Purpose -->
+    <!-- ============== -->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_business_field"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="10.00dp"
+        android:text="Business Field"
+        android:textAppearance="@style/TextAppearanceMedium"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLineEnd"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideLineStart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <!-- ============== -->
+    <!-- Primary Business field -->
+    <!-- ============== -->
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_Purpose"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:padding="10.00dp"
+        android:text="This will help us serve you in the best way we can and present you with relevant offers"
+        android:textAppearance="@style/TextAppearanceSmall"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLineEnd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideLineStart"
+        app:layout_constraintTop_toBottomOf="@id/tv_business_field" />
+
+    <!-- ============== -->
+    <!-- Select One -->
+    <!-- ============== -->
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_primary_business"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:padding="10.00dp"
+        android:text="What is your primary business field"
+        android:textAppearance="@style/TextAppearanceMedium"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLineEnd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideLineStart"
+        app:layout_constraintTop_toBottomOf="@id/tv_Purpose" />
+
+    <!-- ============== -->
+    <!-- Choice Chips group1-->
+    <!-- ============== -->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_Select_One"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="10.00dp"
+        android:text="Select one (required)"
+        android:textAppearance="@style/TextAppearanceSmall"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLineEnd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideLineStart"
+        app:layout_constraintTop_toBottomOf="@id/tv_primary_business" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLineEnd"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideLineStart"
+        app:layout_constraintTop_toBottomOf="@id/tv_Select_One"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipBuilder"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:elevation="2.00dp"
+            android:minWidth="80.00dp"
+            android:minHeight="42.00dp"
+            android:text="Builder"
+            android:textAlignment="center"
+            android:textColor="@color/ic_selector_chip_text"
+            android:textSize="15dp"
+            app:chipBackgroundColor="@color/ic_selector_chip_four"
+            app:chipCornerRadius="20.00dp"
+            app:chipStrokeColor="@color/ic_selector_chip_stroke_four"
+            app:chipStrokeWidth="1.00dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipRepairer"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="2.00dp"
+            android:minWidth="70.00dp"
+            android:minHeight="42.00dp"
+            android:text="Repairer, Remodeler, Renovator"
+            android:textAlignment="center"
+            android:textColor="@color/ic_selector_chip_text"
+            android:textSize="15dp"
+            app:chipBackgroundColor="@color/ic_selector_chip_four"
+            app:chipCornerRadius="20.00dp"
+            app:chipStrokeColor="@color/ic_selector_chip_stroke_four"
+            app:chipStrokeWidth="1.00dp" />
+    </com.google.android.material.chip.ChipGroup>
+    <!-- ============== -->
+    <!-- Choice Chips group2-->
+    <!-- ============== -->
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLineEnd"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideLineStart"
+        app:layout_constraintTop_toBottomOf="@id/chipGroup1"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipTrades_person"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:elevation="2.00dp"
+            android:minWidth="35.00dp"
+            android:minHeight="42.00dp"
+            android:text="Tradesperson"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearanceMedium"
+            android:textColor="@color/ic_selector_chip_text"
+            android:textSize="15dp"
+            app:chipBackgroundColor="@color/ic_selector_chip_four"
+            app:chipCornerRadius="20.00dp"
+            app:chipStrokeColor="@color/ic_selector_chip_stroke_four"
+            app:chipStrokeWidth="1.00dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_residential_property_manager"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="2.00dp"
+            android:minWidth="70dp"
+            android:minHeight="42.00dp"
+            android:text="Residential Property Manger"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearanceMedium"
+            android:textColor="@color/ic_selector_chip_text"
+            android:textSize="15dp"
+            app:chipBackgroundColor="@color/ic_selector_chip_four"
+            app:chipCornerRadius="20.00dp"
+            app:chipStrokeColor="@color/ic_selector_chip_stroke_four"
+            app:chipStrokeWidth="1.00dp" />
+
+    </com.google.android.material.chip.ChipGroup>
+    <!-- ============== -->
+    <!-- Choice Chips group3-->
+    <!-- ============== -->
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLineEnd"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideLineStart"
+        app:layout_constraintTop_toBottomOf="@id/chipGroup2"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_commercial_property_manager"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="2.00dp"
+            android:minWidth="70.00dp"
+            android:minHeight="42.00dp"
+            android:text="Commercial Property Manager"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearanceMedium"
+            android:textColor="@color/ic_selector_chip_text"
+            android:textSize="15dp"
+            app:chipBackgroundColor="@color/ic_selector_chip_four"
+            app:chipCornerRadius="20.00dp"
+            app:chipStrokeColor="@color/ic_selector_chip_stroke_four"
+            app:chipStrokeWidth="1.00dp" />
+    </com.google.android.material.chip.ChipGroup>
+    <!-- ============== -->
+    <!-- Next button-->
+    <!-- ============== -->
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="chipGroup3" />
+
+    <Button
+        android:id="@+id/button_Next"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="272dp"
+        android:background="@drawable/custom_button"
+        android:drawablePadding="12dp"
+        android:text="Next"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chipGroup3"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

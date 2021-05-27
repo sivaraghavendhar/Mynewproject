@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearanceMedium">TextAppearanceMedium</style>
+
+    <style name="TextAppearanceSmallest">TextAppearanceSmallest</style>
+
+    <style name="TextAppearanceSmall">TextAppearanceSmall</style>
+</resources>

@@ -5,16 +5,16 @@ import android.text.SpannableString
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import kotlinx.android.synthetic.main.fragment_home.*
+import kotlinx.android.synthetic.main.fragment_second.*
 
-class HomeFragment: Fragment(R.layout.fragment_home) {
+class SecondFragment: Fragment(R.layout.fragment_second) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-          btn_next.setOnClickListener {
-              val action = HomeFragmentDirections.actionHomeFragmentToSecondFragment()
-              findNavController().navigate(action)
-          }
+     button4.setOnClickListener {
+         val action = SecondFragmentDirections.actionSecondFragmentToThirdFragment()
+         findNavController().navigate(action)
+     }
     }
 }

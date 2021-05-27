@@ -9,7 +9,7 @@
     tools:layout_editor_absoluteY="81dp">
 
     <TextView
-        android:id="@+id/text_View1"
+        android:id="@+id/tv_choose_account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -37,7 +37,7 @@
         app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_View1" />
+        app:layout_constraintTop_toBottomOf="@id/tv_choose_account" />
 
 
     <TextView
@@ -96,8 +96,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <Button
-        android:id="@+id/button"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_next"
         android:layout_width="match_parent"
         android:layout_height="25dp"
         android:layout_marginTop="450dp"
